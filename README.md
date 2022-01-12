@@ -13,4 +13,4 @@ wget https://raw.githubusercontent.com/thiagomneves/linux-scripts/master/log4j_c
 wget https://raw.githubusercontent.com/thiagomneves/linux-scripts/master/philips_shb3595.sh -q -O -| bash
 
 ## habilitar paste no vim em máquinas debian
-wget https://raw.githubusercontent.com/thiagomneves/linux-scripts/master/vimrc.sh -q -0 -| bash
+wget https://raw.githubusercontent.com/thiagomneves/linux-scripts/master/vimrc.sh -q -O -| bash
