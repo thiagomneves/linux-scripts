@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat << EOF >> /etc/vim/vimrc.local
+cat << 'EOF' >> /etc/vim/vimrc.local
 " This file loads the default vim options at the beginning and prevents
 " that they are being loaded again later. All other options that will be set,
 " are added, or overwrite the default settings. Add as many options as you
