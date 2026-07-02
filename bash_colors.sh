@@ -25,22 +25,14 @@ UserConfig="
 ##
 # LR:Personalizando o prompt do sistema
 ##
-if [[ \$UID -ne 0 ]]; then
-   export PS1='\[\e[1;32m\]\u\[\e[m\]@\[\e[1;33m\]\h\[\e[m\]:\[\e[1;34m\]\W\[\e[m\]\[\e[0;37m\]\\$\[\e[m\] '
-else
-   export PS1='\[\e[1;32m\]\u\[\e[m\]@\[\e[1;33m\]\h\[\e[m\]:\[\e[1;34m\]\W\[\e[m\]\[\e[0;31m\]\\$\[\e[m\] '
-fi
+export PS1='\[\e[1;32m\]\u\[\e[m\]@\[\e[1;33m\]\h\[\e[m\]:\[\e[1;34m\]\W\[\e[m\]\[\e[0;37m\]\\$\[\e[m\] '
 "
 RootConfig="
 
 ##
 # LR:Personalizando o prompt do sistema
 ##
-if [[ \$UID -ne 0 ]]; then
-   export PS1='\[\e[1;31m\]\u\[\e[m\]@\[\e[1;33m\]\h\[\e[m\]:\[\e[1;34m\]\W\[\e[m\]\[\e[0;37m\]\\$\[\e[m\] '
-else
-   export PS1='\[\e[1;31m\]\u\[\e[m\]@\[\e[1;33m\]\h\[\e[m\]:\[\e[1;34m\]\W\[\e[m\]\[\e[0;31m\]\\$\[\e[m\] '
-fi
+export PS1='\[\e[1;31m\]\u\[\e[m\]@\[\e[1;33m\]\h\[\e[m\]:\[\e[1;34m\]\W\[\e[m\]\[\e[0;31m\]\\$\[\e[m\] '
 "
 HumanUsers=`cut -d: -f1,3 /etc/passwd | egrep ':[0-9]{4}$' | cut -d: -f1`
 
