@@ -10,6 +10,9 @@ wget https://raw.githubusercontent.com/thiagomneves/linux-scripts/master/bash_co
 ### Fix do Bash Colors (quando não funciona geralmente criar um bash_profile resolve
 wget https://raw.githubusercontent.com/thiagomneves/linux-scripts/master/bashprofile.sh -q -O -| bash
 
+## instalar o open-vm-tools
+wget https://raw.githubusercontent.com/thiagomneves/linux-scripts/master/install_open-vm-tools.sh -q -O -| bash
+
 ## rodar benchmark de memória
 wget https://raw.githubusercontent.com/thiagomneves/linux-scripts/master/benchmark_ram.sh -q -O -| bash
 
@@ -29,3 +32,6 @@ wget https://raw.githubusercontent.com/thiagomneves/linux-scripts/master/slackwa
 
 ## instalar o fastfetch no slackware
 wget https://raw.githubusercontent.com/thiagomneves/linux-scripts/master/slackware/install_fastfetch.sh -q -O -| bash
+
+## instalar a biblioteca libmspack.sh no slackware (necessária para o open-vm-tools)
+wget https://raw.githubusercontent.com/thiagomneves/linux-scripts/master/slackware/install_libmspack.sh -q -O -| bash
