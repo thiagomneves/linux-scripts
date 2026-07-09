@@ -2,16 +2,10 @@
 # Script de automação para compilação e instalação do VMware open-vm-tools
 
 # Define o caminho do seu script de instalação da libmspack
-SCRIPT_MSPACK="wget https://raw.githubusercontent.com/thiagomneves/linux-scripts/master/slackware/install_fastfetch.sh -q -O -| bash"
+SCRIPT_MSPACK="wget https://raw.githubusercontent.com/thiagomneves/linux-scripts/master/slackware/install_libmspack.sh -q -O -| bash"
 
 # Acessa o diretório temporário do sistema para isolar a compilação
 cd /tmp
-
-# Remove qualquer resquício de clonagens anteriores para evitar conflitos de arquivos
-rm -rf open-vm-tools
-
-# Clona apenas o último commit da branch estável do repositório oficial da VMware
-git clone --depth 1 https://github.com/vmware/open-vm-tools.git
 
 # Verifica se o sistema operacional é o Slackware
 if [ -f /etc/slackware-version ]; then
@@ -28,6 +22,15 @@ else
     echo " Este sistema não é o Slackware. Pulando a libmspack..."
     echo "=========================================================="
 fi
+
+# Acessa o diretório temporário do sistema para isolar a compilação
+cd /tmp
+
+# Remove qualquer resquício de clonagens anteriores para evitar conflitos de arquivos
+rm -rf open-vm-tools
+
+# Clona apenas o último commit da branch estável do repositório oficial da VMware
+git clone --depth 1 https://github.com/vmware/open-vm-tools.git
 
 # Entra na subpasta interna onde residem os arquivos de código-fonte e do Autotools
 cd open-vm-tools/open-vm-tools
