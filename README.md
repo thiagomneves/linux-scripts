@@ -11,7 +11,7 @@ wget https://raw.githubusercontent.com/thiagomneves/linux-scripts/master/bash_co
 wget https://raw.githubusercontent.com/thiagomneves/linux-scripts/master/bashprofile.sh -q -O -| bash
 
 ## rodar benchmark de memória
-wget https://raw.githubusercontent.com/thiagomneves/linux-scripts/master/benchmark-ram.sh -q -O -| bash
+wget https://raw.githubusercontent.com/thiagomneves/linux-scripts/master/benchmark_ram.sh -q -O -| bash
 
 ## checar log4j
 wget https://raw.githubusercontent.com/thiagomneves/linux-scripts/master/log4j_checker_beta.sh -q -O -| bash
